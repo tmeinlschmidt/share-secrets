@@ -7,6 +7,8 @@ me="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cert_path=${me}/../certs
 openssl=$(hash brew 2>/dev/null && brew ls openssl | grep '/bin/openssl' || echo $(which openssl))
 
+mkdir -p ${cert_path}
+
 echo "Generating certificate from private key '${private_key} for isid '${isid}"
 ${openssl} req -x509 -new -key ${priv_key} -days 3650 -nodes -subj "/C=US/ST=*/L=*/O=*/OU=*/CN=${isid}/" -out ${cert_path}/$isid.pem
 echo "${priv_key}" > ${cert_path}/${isid}.meta
