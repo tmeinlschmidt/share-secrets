@@ -24,7 +24,7 @@ it's time to use some secure sharing.
 * either run `./edit.sh -r file` (-r stands for recode, no edit then) or `./recode.sh` to process all the files in `data`
 
 ## Contributing
-* Fork it ( https://github.com/[my-github-username]/eye-hipchat/fork )
+* Fork it ( https://github.com/tmeinlschmidt/share-secrets/fork )
 * Create your feature branch (git checkout -b my-new-feature)
 * Commit your changes (git commit -am 'Add some feature')
 * Push to the branch (git push origin my-new-feature)
